@@ -9,7 +9,34 @@
 }
 
 .slider-arrow {
+	position: relative;
 	cursor: pointer;
+	transition: transform 0.3s;
+
+	&:hover {
+		transform: scale(1.2);
+	}
+
+	&::after {
+		dosplay: block;
+		position: absolute;
+		content: '';
+		width: 0;
+		height: 0;
+		border: none;
+		transition: width 0.3s, height 0.3s;
+	}
+
+	&:hover::after {
+		display: block;
+		content: '';
+		width: 46px;
+		height: 46px;
+		border: 1px solid $content-text-color__white;
+		bottom: -2px;
+		left: -14px;
+		position: absolute;
+	}
 }
 
 .slider-body {
@@ -56,9 +83,9 @@
 	cursor: pointer;
 	transition: background-color 0.3s;
 
-		&:hover {
-			background-color: $content-text-color__white;
-		}
+	&:hover {
+		background-color: $content-text-color__white;
+	}
 }
 
 

@@ -94,29 +94,7 @@ ul {
 .main-nav__link {
   text-decoration: none;
   color: #fff;
-  font-size: 15px;
-  position: relative; }
-  .main-nav__link:after {
-    display: block;
-    content: '';
-    width: 0;
-    height: 0;
-    background-color: #fff;
-    bottom: -19px;
-    left: 0;
-    position: absolute;
-    -webkit-transition: width 0.3s;
-    -o-transition: width 0.3s;
-    transition: width 0.3s; }
-  .main-nav__link:hover::after {
-    display: block;
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    bottom: -19px;
-    left: 0;
-    position: absolute; }
+  font-size: 15px; }
 
 .main-contact-tel {
   text-decoration: none;
@@ -124,8 +102,7 @@ ul {
   font-size: 24px; }
 
 .burger-menu {
-  cursor: pointer;
-  margin-left: 50px; }
+  cursor: pointer; }
 
 .scrolldrop__image {
   cursor: pointer;
@@ -151,36 +128,7 @@ ul {
   padding-bottom: 100px; }
 
 .slider-arrow {
-  position: relative;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  -o-transition: transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s; }
-  .slider-arrow:hover {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2); }
-  .slider-arrow::after {
-    dosplay: block;
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    border: none;
-    -webkit-transition: width 0.3s, height 0.3s;
-    -o-transition: width 0.3s, height 0.3s;
-    transition: width 0.3s, height 0.3s; }
-  .slider-arrow:hover::after {
-    display: block;
-    content: '';
-    width: 46px;
-    height: 46px;
-    border: 1px solid #fff;
-    bottom: -2px;
-    left: -14px;
-    position: absolute; }
+  cursor: pointer; }
 
 .slider-body {
   display: -webkit-box;
