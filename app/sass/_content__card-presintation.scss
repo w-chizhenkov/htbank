@@ -1,0 +1,15 @@
+.card-presintation {
+	margin: 0 auto;
+	display: flex;
+	color: $content-text-color__white;
+	padding: 56px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: linear-gradient(to top right, $content-bg-color__orange, $content-bg-color__lime);
+}
+
+.card-presintation__text {
+	font-size: 32px;
+	margin-left: 56px;
+	line-height: 48px;
+}

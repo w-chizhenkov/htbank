@@ -1,0 +1,18 @@
+$main-font: 'Open Sans', sans-serif;
+$content-text-color__white: #fff;
+$content-text-color__grey: #333;
+$content-text-color__deep-grey: #808080;
+$content-text-color__green: #0d703f;
+$content-text-color__green_hover: #49aa43;
+$content-text-color__attention: #ff5050;
+$content-bg-color__grey: #f2f2f2;
+$content-bg-color__orange: #fbb03b;
+$content-bg-color__lime: #83c222;
+
+@import "_basic.scss";
+@import "_header.scss";
+@import "_slider.scss";
+@import "_content.scss";
+@import "_content__card-presintation.scss";
+@import "_content__card-form.scss";
+@import "_footer.scss";

@@ -1,0 +1,194 @@
+.breadcrumbs_wrapper {
+	padding: 35px 0 10px 0;
+}
+
+.breadcrumbs__list {
+	display: flex;
+}
+
+.breadcrumbs__item {
+	margin-right: 5px;
+}
+
+.breadcrumbs__item::after {
+	content: ">";
+	margin-left: 5px;
+}
+
+.breadcrumbs__item:last-child::after {
+	content: "";
+}
+
+.breadcrumbs__link {
+	color: $content-text-color__grey;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.card-description {
+	background-color: $content-text-color__white;
+	border-radius: 10px;
+	padding: 22px 30px 40px 30px;
+}
+
+.feature-card_wrapper {
+	margin-top: 25px;
+}
+
+.card-caption {
+	font-size: 32px;
+	color: $content-text-color__green;
+	font-weight: 300;
+	margin-top: 0;
+
+	&_hight {
+		font-size: 40px;
+	}
+}
+
+.feature-cardlist {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.feature-cardlist__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 25%;
+	margin-bottom: 40px;
+}
+
+.feature-cardlist__image {
+	margin-bottom: 30px;
+}
+
+.how-to-order {
+	background-color: $content-bg-color__grey;
+	padding: 26px 35px 38px 35px;
+	border-radius: 10px;
+}
+
+.card-caption_how-to-order {
+	margin-bottom: 20px;
+}
+
+.how-to-order__link {
+	color: $content-text-color__grey;
+	text-decoration: none;
+	position: relative;
+	transition: color 0.3s;
+
+	&:hover {
+		color: $content-text-color__green_hover;
+	}
+
+	&::after {
+		display: block;
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: $content-text-color__green;
+		bottom: -2px;
+		left: 0;
+		position: absolute;
+	}
+}
+
+.timework {
+	background-color: $content-bg-color__grey;
+	padding: 27px 35px 20px 35px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.card-caption_timework {
+	margin-bottom: 19px;
+}
+
+.timework-simple__caption {
+	margin-top: 0;
+	margin-bottom: 23px;
+	color: $content-text-color__green;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.timework-box {
+	display: flex;
+}
+
+.timework-simple-box {
+	display: flex;
+}
+
+.timework-simple {
+	font-size: 16px;
+	position: relative;
+
+	&:first-child {
+		margin-right: 95px;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 1px;
+		background-color: #ccc;
+		top: 0;
+		left: 443px;
+		height: 135px;
+	}
+
+	&:last-child::after {
+		display: none;
+	}
+}
+
+.timework-simple__days {
+	margin-right: 20px;
+}
+
+.timework-simple__day, .timework-simple__clock {
+	margin-bottom: 17px;
+}
+
+.card-conditions_wrapper {
+	margin: 37px 0 0 0;
+}
+
+.card-conditions__link {
+	color: $content-text-color__grey;
+	text-decoration: none;
+	position: relative;
+	transition: color 0.3s;
+
+	&:hover {
+		color: $content-text-color__green_hover;
+	}
+
+	&::after {
+		display: block;
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: $content-text-color__green;
+		bottom: -2px;
+		left: 0;
+		position: absolute;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

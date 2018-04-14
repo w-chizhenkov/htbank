@@ -1,0 +1,49 @@
+.main-header {
+	position: relative;
+	padding-top: 23px;
+	background: linear-gradient(to top right, $content-bg-color__orange, $content-bg-color__lime);
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+}
+
+.header-top-middle {
+	margin: 0 auto;
+}
+
+.main-nav__list {
+	display: flex;
+}
+
+.main-nav__item {
+	margin: 0 30px;
+}
+
+.main-nav__link {
+	text-decoration: none;
+	color: $content-text-color__white;
+	font-size: 15px;
+}
+
+.main-contact-tel {
+	text-decoration: none;
+	color: $content-text-color__white;
+	font-size: 24px;
+}
+
+.burger-menu {
+	cursor: pointer;
+}
+
+.scrolldrop__image {
+	cursor: pointer;
+	position: absolute;
+	bottom: -14px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+

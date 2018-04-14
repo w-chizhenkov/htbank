@@ -1,0 +1,158 @@
+.issue-card {
+	padding-top: 40px;
+}
+
+.card-caption_issue-card {
+	margin-bottom: 28px;
+}
+
+.order-form__choice-var {
+	margin-bottom: 19px;
+}
+
+.order-form__text {
+	font-size: 12px;
+	margin-bottom: 8px;
+}
+
+.order-form__text-attention {
+	color: $content-text-color__attention;
+}
+
+.order-form__select-box {
+	max-width: 460px;
+	width: 100%;
+	border: 1px solid $content-bg-color__grey;
+	border-radius: 10px;
+	position: relative;
+
+	&::after {
+		display: block;
+		content: '';
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		margin-top: -3px;
+		width: 15px;
+		height: 7px;
+		background: url("../img/order-form__select-arrow_down.svg") no-repeat;
+	}
+}
+
+.order-form__select {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0 20px;
+	width: 100%;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	line-height: 50px;
+	outline: none;
+}
+
+.order-form__data-box {
+	display: flex;
+	align-items: center;
+}
+
+.order-form__input { 
+	max-width: 460px;
+	width: 100%;
+	border: 1px solid $content-bg-color__grey;
+	border-radius: 10px;
+	line-height: 50px;
+	outline: none;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin-right: 20px;
+	margin-bottom: 19px;
+}
+
+.order-form__validation {
+	font-weight: 600;
+	font-size: 10px;
+}
+
+.order-form__validation_true {
+	color: $content-text-color__green;
+}
+
+.order-form__validation_false {
+	color: $content-text-color__attention;
+}
+
+.order-form__check {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+}
+
+.order-form__link {
+	color: $content-text-color__grey;
+	text-decoration: none;
+	position: relative;
+	transition: color 0.3s;
+
+	&:hover {
+		color: $content-text-color__green_hover;
+	}
+
+	&::after {
+		display: block;
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: $content-text-color__green;
+		bottom: -2px;
+		left: 0;
+		position: absolute;
+	}
+}
+
+.order-form__check_wrapper {
+	margin-bottom: 30px;
+}
+
+.order-form__checkbox {
+	display: none;
+}
+
+.order-form__label {
+	position: relative;
+	margin-right: 30px;
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		top: -8px;
+		left: 0;
+		border-radius: 2px;
+		border: 1px solid $content-bg-color__grey;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		top: -8px;
+		left: 0;
+		border-radius: 2px;
+		border: 1px solid $content-bg-color__grey;
+		opacity: 0;
+		background: url("../img/order-form__checkbox_check.svg") no-repeat center;
+	}
+}
+
+.order-form__checkbox:checked + .order-form__label::after {
+    opacity: 1;
+}
+
+.order-form__button_wrapper {
+	margin-bottom: 40px;
+}
