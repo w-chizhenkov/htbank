@@ -257,7 +257,18 @@ ul {
   background-color: #fff;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  padding: 22px 30px 40px 30px; }
+  padding: 22px 30px 40px 30px;
+  position: relative; }
+
+.deco__color-line_card-description::before {
+  top: 92px;
+  left: -10px;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 1060px;
+  height: 20px;
+  background: url("../img/deco__color-line.png"); }
 
 .feature-card_wrapper {
   margin-top: 25px; }
@@ -266,7 +277,8 @@ ul {
   font-size: 32px;
   color: #0d703f;
   font-weight: 300;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 74px; }
   .card-caption_hight {
     font-size: 40px; }
 
@@ -429,7 +441,18 @@ ul {
   line-height: 48px; }
 
 .issue-card {
-  padding-top: 40px; }
+  position: relative;
+  padding-top: 68px; }
+
+.deco__color-line_issue-card::before {
+  top: 31px;
+  left: -40px;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 1060px;
+  height: 20px;
+  background: url("../img/deco__color-line.png"); }
 
 .card-caption_issue-card {
   margin-bottom: 28px; }

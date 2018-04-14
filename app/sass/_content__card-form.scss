@@ -1,5 +1,17 @@
 .issue-card {
-	padding-top: 40px;
+	position: relative;
+	padding-top: 68px;
+}
+
+.deco__color-line_issue-card::before {
+	top: 31px;
+	left: -40px;
+	position: absolute;
+	display: block;
+	content: '';
+	width: 1060px;
+	height: 20px;
+	background: url("../img/deco__color-line.png");
 }
 
 .card-caption_issue-card {

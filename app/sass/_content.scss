@@ -41,6 +41,18 @@
 	background-color: $content-text-color__white;
 	border-radius: 10px;
 	padding: 22px 30px 40px 30px;
+	position: relative;
+}
+
+.deco__color-line_card-description::before {
+	top: 92px;
+	left: -10px;
+	position: absolute;
+	display: block;
+	content: '';
+	width: 1060px;
+	height: 20px;
+	background: url("../img/deco__color-line.png");
 }
 
 .feature-card_wrapper {
@@ -52,6 +64,7 @@
 	color: $content-text-color__green;
 	font-weight: 300;
 	margin-top: 0;
+	margin-bottom: 74px;
 
 	&_hight {
 		font-size: 40px;
