@@ -8,11 +8,11 @@
 
 .breadcrumbs__item {
 	margin-right: 5px;
-}
 
-.breadcrumbs__item::after {
-	content: ">";
-	margin-left: 5px;
+	&::after {
+		content: ">";
+		margin-left: 5px;
+	}
 }
 
 .breadcrumbs__item:last-child::after {
@@ -23,6 +23,18 @@
 	color: $content-text-color__grey;
 	font-size: 14px;
 	text-decoration: none;
+	position: relative;
+
+	&:hover::after {
+		display: block;
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: $content-text-color__grey;
+		bottom: -2px;
+		left: 0;
+		position: absolute;
+	}
 }
 
 .card-description {

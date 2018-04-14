@@ -162,16 +162,6 @@ ul {
     -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
             transform: scale(1.2); }
-  .slider-arrow::after {
-    dosplay: block;
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    border: none;
-    -webkit-transition: width 0.3s, height 0.3s;
-    -o-transition: width 0.3s, height 0.3s;
-    transition: width 0.3s, height 0.3s; }
   .slider-arrow:hover::after {
     display: block;
     content: '';
@@ -241,10 +231,9 @@ ul {
 
 .breadcrumbs__item {
   margin-right: 5px; }
-
-.breadcrumbs__item::after {
-  content: ">";
-  margin-left: 5px; }
+  .breadcrumbs__item::after {
+    content: ">";
+    margin-left: 5px; }
 
 .breadcrumbs__item:last-child::after {
   content: ""; }
@@ -252,7 +241,17 @@ ul {
 .breadcrumbs__link {
   color: #333;
   font-size: 14px;
-  text-decoration: none; }
+  text-decoration: none;
+  position: relative; }
+  .breadcrumbs__link:hover::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    bottom: -2px;
+    left: 0;
+    position: absolute; }
 
 .card-description {
   background-color: #fff;
@@ -497,6 +496,10 @@ ul {
           box-sizing: border-box;
   margin-right: 20px;
   margin-bottom: 19px; }
+
+.order-form__input_not-valid {
+  background-color: #f2f2f2;
+  color: #ccc; }
 
 .order-form__validation {
   font-weight: 600;

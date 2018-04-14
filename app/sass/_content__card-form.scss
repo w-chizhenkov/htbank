@@ -69,6 +69,11 @@
 	margin-bottom: 19px;
 }
 
+.order-form__input_not-valid {
+	background-color: $content-bg-color__grey;
+	color: #ccc;
+}
+
 .order-form__validation {
 	font-weight: 600;
 	font-size: 10px;

@@ -17,16 +17,6 @@
 		transform: scale(1.2);
 	}
 
-	&::after {
-		dosplay: block;
-		position: absolute;
-		content: '';
-		width: 0;
-		height: 0;
-		border: none;
-		transition: width 0.3s, height 0.3s;
-	}
-
 	&:hover::after {
 		display: block;
 		content: '';
