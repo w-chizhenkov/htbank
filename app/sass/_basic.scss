@@ -16,6 +16,7 @@ ul {
 	background-color: $content-bg-color__grey;
 	flex-direction: column;
 	min-height: 100vh;
+	overflow: hidden;
 }
 
 .container-content {
@@ -27,9 +28,10 @@ ul {
 
 .container {
 	width: 100%;
-	max-width: 1030px;
+	max-width: 1060px;
 	margin: 0 auto;
 	padding: 0 15px;
+	box-sizing: border-box;
 }
 
 .main-btn__link {
