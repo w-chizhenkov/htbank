@@ -1,0 +1,13 @@
+.headhesive {
+	width: 100%;
+	background-color: $content-text-color__grey;
+	position: fixed;
+	transform: translateY(-100%);
+	z-index: 10;
+	color: $content-text-color__deep-grey;
+	transition: transform 0.3s;
+}
+
+.headhesive--stick {
+	transform: translateY(0);
+}

@@ -2,6 +2,7 @@ body {
 	font-family: $main-font;
 	font-weight: 300;
 	font-size: 14px;
+	margin: 0;
 }
 
 ul {
@@ -15,11 +16,11 @@ ul {
 	background-color: $content-bg-color__grey;
 	flex-direction: column;
 	min-height: 100vh;
-	overflow-x: hidden;
 }
 
 .container-content {
 	flex-grow: 1;
+	flex-shrink: 0;
 	background-color: $content-bg-color__grey;
 	padding-bottom: 80px;
 }

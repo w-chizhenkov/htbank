@@ -2,7 +2,10 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	<meta content="telephone=no" name="format-detection" />
 	<title>THB Card Reedit (Weblime Test)</title>
+	<link rel="icon" href="favicons/favicon.ico" type="image/png">
 	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
@@ -57,7 +60,9 @@
 					</div>
 				</div>
 				<div class="scrolldrop">
-					<img src="img/scrolldrop__arrow.svg" alt="scrolldrop image" class="scrolldrop__image">
+					<a href="#how-to-order__anchor" class="scrolldrop__link-anchor">
+						<img src="img/scrolldrop__arrow.svg" alt="scrolldrop image" class="scrolldrop__image">
+					</a>
 				</div>		
 			</div>
 		</header>
@@ -79,7 +84,7 @@
 						</li>
 					</ul>
 				</nav>
-				<div class="card-description">
+				<div class="card-description deco__color-line_card-description">
 					<div class="debit-card">
 						<h2 class="card-caption card-caption_hight">Дебетовая карта VISA Gold</h2>
 					</div>
@@ -130,10 +135,10 @@
 						</ul>
 					</div>
 					<div class="how-to-order">
-						<h3 class="card-caption card__caption_how-to-order">Как заказать карту</h3>
+						<h3 class="card-caption card__caption_how-to-order" id="how-to-order__anchor">Как заказать карту</h3>
 						<div class="how-to-order__text">Заказать выпуск карты можно <a class="how-to-order__link" href="#">в офисах ТХБ</a> или с помощью <a class="how-to-order__link" href="#">онлайн формы</a> заказа</div>
 					</div>
-					<div class="issue-card">
+					<div class="issue-card deco__color-line_issue-card">
 						<form class="order-form" action="/" method="post">
 							<h3 class="card-caption card-caption_issue-card">Заказать карту</h3>
 							<div class="order-form__choice-var">
@@ -173,7 +178,7 @@
 							<div class="order-form__information">
 								<div class="order-form__text">E-mail <span class="order-form__text-attention">*</span></div>
 								<div class="order-form__data-box">
-									<input type="email" class="order-form__input" required>
+									<input type="email" class="order-form__input order-form__input_not-valid" required>
 									<div class="order-form__validation order-form__validation_false">Не заполнено</div>
 								</div>
 							</div>
@@ -302,8 +307,8 @@
 						</div>
 						<div class="footer-social">
 							<ul class="footer-social__list">
-							<li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link_vk"><span class="footer-social__hidden">link for vk</span></a></li>
-							<li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link_fb"><span class="footer-social__hidden">link for fb</span></a></li>
+								<li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link_vk"><span class="footer-social__hidden">link for vk</span></a></li>
+								<li class="footer-social__item"><a href="#" class="footer-social__link footer-social__link_fb"><span class="footer-social__hidden">link for fb</span></a></li>
 							</ul>
 						</div>
 						<div class="footer-search">
@@ -317,5 +322,9 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/libs.min.js"></script>
+	<script src="js/common-js.js"></script>
+	<script src="js/common-jq.js"></script>
 </body>
 </html>

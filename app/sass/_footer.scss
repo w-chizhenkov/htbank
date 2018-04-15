@@ -1,4 +1,6 @@
 .main-footer {
+	flex-grow: 0;
+  	flex-shrink: 0;
 	background-color: $content-text-color__grey;
 	color: $content-text-color__deep-grey;
 }
@@ -6,6 +8,7 @@
 .up-footer {
 	padding: 80px 0;
 	display: flex;
+	overflow-x: hidden;
 }
 
 .up-footer-contacts, .up-footer-middle {

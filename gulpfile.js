@@ -20,7 +20,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-	return gulp.src(['app/libs/jquery.nicescroll.min.js', 'app/libs/wow.min.js'])
+	return gulp.src(['app/libs/headhesive.min.js', 'app/libs/PageScroll2id.min.js'])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('app/js'));
